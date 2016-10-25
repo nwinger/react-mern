@@ -5,9 +5,9 @@ import Dashboard from './components/dashboard';
 import Login from './components/login';
 
 export default(
-  <Route path='/' component={App}>
+  <Route path="/" component={App}>
     <IndexRoute component={Dashboard} />
-    <Route path='dashboard' component={Dashboard} />
-    <Route path='login' component={Login} />
+    <Route path="dashboard" component={Dashboard} />
+    <Route path="login" component={Login} />
   </Route>
 );

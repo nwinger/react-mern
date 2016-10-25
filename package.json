@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
-    "lint": "eslint src"
+    "lint": "eslint src || exit 0"
   },
   "author": "Nicklas Winger",
   "license": "ISC",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
+    "babel-eslint": "^7.0.0",
     "babel-loader": "^6.2.5",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-react-html-attrs": "^2.0.0",
