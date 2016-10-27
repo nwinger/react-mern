@@ -6,5 +6,6 @@ import routes from './routes';
 
 require('./assets/stylesheets/base.scss');
 require('./assets/stylesheets/navigation.scss');
+require('./assets/stylesheets/lemonade.scss');
 
 ReactDom.render(<Router history={browserHistory} routes={routes} />, document.getElementById('app'));
