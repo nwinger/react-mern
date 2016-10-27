@@ -63,6 +63,10 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	/*eslint-disable*/
+	__webpack_require__(240);
+	__webpack_require__(241);
+	__webpack_require__(242);
+
 	_reactDom2.default.render(_react2.default.createElement(_reactRouter.Router, { history: _reactRouter.browserHistory, routes: _routes2.default }), document.getElementById('app'));
 
 /***/ },
@@ -27189,10 +27193,15 @@
 	var Navigation = function Navigation() {
 	  return _react2.default.createElement(
 	    'div',
-	    null,
+	    { className: 'frame bit-1 navigation_container' },
+	    _react2.default.createElement(
+	      'h3',
+	      { className: 'bit-40' },
+	      'Journey into React'
+	    ),
 	    _react2.default.createElement(
 	      'ul',
-	      null,
+	      { className: 'bit-60 nav_menu' },
 	      _react2.default.createElement(
 	        'li',
 	        null,
@@ -27301,6 +27310,24 @@
 	// }
 
 	exports.default = Login;
+
+/***/ },
+/* 240 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 241 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 242 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);
