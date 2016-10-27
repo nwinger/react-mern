@@ -1,5 +1,6 @@
 /*eslint-disable*/
-var webpack = require('webpack');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     context: __dirname,
@@ -16,6 +17,10 @@ module.exports = {
                     ],
                     plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy']
                 }
+            },
+            {
+              test: /\.scss$/,
+              loader: ExtractTextPlugin.extract('css!sass')
             }
         ]
     },
@@ -23,6 +28,9 @@ module.exports = {
         path: __dirname,
         filename: "bundle.js"
     },
+    plugins: [
+      new ExtractTextPlugin('src/assets/stylesheets/app.css', { allChunks: true })
+    ],
     resolve: {
         extensions: ['', '.js', '.jsx']
     }
